@@ -8,7 +8,7 @@ const PhoneFrame: React.FC<{ children: React.ReactNode; title: string }> = ({ ch
         <div className="flex justify-center mb-3">
           <div className="w-16 h-16 rounded-full bg-white/10 p-1 backdrop-blur-sm shadow-inner flex items-center justify-center">
             <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-2xl overflow-hidden">
-               <img src="icon128.png" alt="Logo" className="w-12 h-12 object-contain" />
+               <img src="/icon128.png" alt="Logo" className="w-12 h-12 object-contain" />
             </div>
           </div>
         </div>
@@ -132,21 +132,24 @@ const AppPreviews: React.FC = () => {
               </div>
               <div className="space-y-2">
                 <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Original Content</label>
-                <textarea className="w-full h-32 bg-slate-800/40 border border-slate-700 rounded-xl p-4 text-sm text-slate-300 outline-none resize-none transition-all focus:ring-1 focus:ring-teal-500" placeholder="Paste the original post content..."></textarea>
+                <textarea 
+                  className="w-full h-32 bg-slate-800/40 border border-slate-700 rounded-xl p-4 text-xs text-slate-400 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none resize-none transition-all"
+                  placeholder="Paste the original content to verify its timestamp..."
+                ></textarea>
               </div>
-              <div className="space-y-2">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">OTS Proof File</label>
-                <div className="border-2 border-dashed border-slate-700 rounded-xl p-6 flex flex-col items-center justify-center text-slate-500 hover:border-teal-500 hover:text-teal-400 cursor-pointer transition-all bg-slate-800/20 group">
-                  <span className="material-icons-round text-3xl mb-2 transition-transform group-hover:scale-110">upload_file</span>
-                  <span className="text-xs font-bold uppercase tracking-tighter">Drop .ots file here</span>
+              <button className="w-full py-4 border border-primary/50 text-primary rounded-xl font-bold text-sm hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                <span className="material-icons-round text-lg">upload_file</span> Load .ots Proof
+              </button>
+              <div className="pt-4 border-t border-slate-800">
+                <div className="flex items-center gap-2 text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-3">
+                  <span className="material-icons-round text-xs">gavel</span> Verification Status
+                </div>
+                <div className="h-20 flex items-center justify-center border-2 border-dashed border-slate-800 rounded-xl text-slate-600 text-[10px]">
+                  No Proof Loaded
                 </div>
               </div>
-              <button className="w-full py-4 bg-gradient-to-r from-teal-500 to-blue-600 rounded-xl text-white font-bold text-sm shadow-xl flex items-center justify-center gap-2 transform active:scale-95 transition-all">
-                <span className="material-icons-round text-lg">verified</span> Verify Proof
-              </button>
             </div>
           </PhoneFrame>
-
         </div>
       </div>
     </section>

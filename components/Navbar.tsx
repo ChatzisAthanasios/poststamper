@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ onHome }) => {
             className="flex items-center gap-2.5 hover:opacity-80 transition-opacity group"
           >
             <img 
-              src="icon128.png" 
+              src="/icon128.png" 
               alt="PostStamper Logo" 
               className="w-8 h-8 object-contain shadow-sm group-hover:drop-shadow-[0_0_8px_rgba(124,58,237,0.5)] transition-all"
             />
