@@ -1,0 +1,7 @@
+{
+  "name": "Copy of PostStamper",
+  "description": "A blockchain-verified timestamping application for securing your digital content on X, Facebook, Instagram, YouTube, LinkedIn, ChatGPT, and Claude.ai.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
