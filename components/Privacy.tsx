@@ -1,11 +1,6 @@
-
 import React, { useEffect } from 'react';
 
-interface PrivacyProps {
-  onBack: () => void;
-}
-
-const Privacy: React.FC<PrivacyProps> = ({ onBack }) => {
+const Privacy: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,13 +8,13 @@ const Privacy: React.FC<PrivacyProps> = ({ onBack }) => {
   return (
     <div className="pt-32 pb-24 bg-background-light dark:bg-background-dark min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <button 
-          onClick={onBack}
-          className="mb-8 flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all group"
+        <a 
+          href="/index.html"
+          className="mb-8 inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all group"
         >
           <span className="material-icons-round">arrow_back</span>
           Back to Home
-        </button>
+        </a>
 
         <article className="prose prose-slate dark:prose-invert max-w-none">
           <h1 className="text-4xl font-black mb-4 dark:text-white">Privacy Policy</h1>

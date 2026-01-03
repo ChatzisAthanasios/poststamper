@@ -1,13 +1,6 @@
-
 import React from 'react';
 
-interface FooterProps {
-  onPrivacy: () => void;
-  onTerms: () => void;
-  onContact: () => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ onPrivacy, onTerms, onContact }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,14 +10,14 @@ const Footer: React.FC<FooterProps> = ({ onPrivacy, onTerms, onContact }) => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-10 text-sm font-bold uppercase tracking-widest">
-            <button onClick={onPrivacy} className="hover:text-white transition-colors">Privacy Policy</button>
-            <button onClick={onTerms} className="hover:text-white transition-colors">Terms of Service</button>
-            <button onClick={onContact} className="hover:text-white transition-colors">Contact</button>
+            <a href="/privacy.html" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms.html" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/contact.html" className="hover:text-white transition-colors">Contact</a>
           </div>
         </div>
         
         <div className="mt-16 pt-8 border-t border-slate-800/50 text-center text-xs text-slate-600 font-medium tracking-tight">
-          <p>© {new Date().getFullYear()} PostStamper. Created by Chatzis Athanasios. Build to server freedom.</p>
+          <p>© {new Date().getFullYear()} PostStamper. Created by Chatzis Athanasios. Build to serve freedom.</p>
         </div>
       </div>
     </footer>
