@@ -26,8 +26,26 @@
             },
         };
     </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #A78BFA 0%, #2DD4BF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased font-sans">
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased font-sans transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/terms.tsx"></script>
 </body>

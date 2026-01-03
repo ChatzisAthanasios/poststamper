@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
   // Φόρτωση αρχείου περιβάλλοντος με βάση το `mode` στον τρέχοντα κατάλογο εργασίας.
-  // Χρησιμοποιούμε το global process.cwd() που είναι διαθέσιμο σε περιβάλλοντα Node.js.
   const env = loadEnv(mode, process.cwd(), '');
   
   return {
@@ -17,6 +16,14 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       outDir: 'dist',
+      rollupOptions: {
+        input: {
+          main: 'index.html',
+          privacy: 'privacy.html',
+          terms: 'terms.html',
+          contact: 'contact.html',
+        },
+      },
     }
   };
 });
