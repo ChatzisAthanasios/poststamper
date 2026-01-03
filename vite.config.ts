@@ -1,18 +1,15 @@
-
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
-import process from 'node:process';
 
 export default defineConfig(({ mode }) => {
-  // Load env file based on `mode` in the current working directory.
-  // Set the third parameter to '' to load all envs regardless of the `VITE_` prefix.
-  // Fix: Import process from node:process to resolve the type error on cwd()
+  // Φόρτωση αρχείου περιβάλλοντος με βάση το `mode` στον τρέχοντα κατάλογο εργασίας.
+  // Χρησιμοποιούμε το global process.cwd() που είναι διαθέσιμο σε περιβάλλοντα Node.js.
   const env = loadEnv(mode, process.cwd(), '');
   
   return {
     plugins: [react()],
     define: {
-      // This allows the Gemini SDK to access the API_KEY via process.env.API_KEY
+      // Επιτρέπει στο Gemini SDK να έχει πρόσβαση στο API_KEY μέσω του process.env.API_KEY
       'process.env.API_KEY': JSON.stringify(env.API_KEY),
     },
     server: {
