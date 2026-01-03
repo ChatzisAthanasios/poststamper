@@ -11,7 +11,11 @@ const Footer: React.FC<FooterProps> = ({ onPrivacy }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex items-center gap-3">
-            <span className="material-icons-round text-primary text-3xl">verified_user</span>
+            <img 
+              src="icon128.png" 
+              alt="PostStamper Logo" 
+              className="w-9 h-9 object-contain drop-shadow-[0_0_12px_rgba(124,58,237,0.3)]"
+            />
             <span className="font-black text-white text-2xl tracking-tight">PostStamper</span>
           </div>
           

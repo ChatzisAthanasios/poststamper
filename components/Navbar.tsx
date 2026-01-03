@@ -12,24 +12,20 @@ const Navbar: React.FC<NavbarProps> = ({ onHome }) => {
         <div className="flex items-center justify-between h-16">
           <button 
             onClick={onHome}
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2.5 hover:opacity-80 transition-opacity group"
           >
-            <span className="material-icons-round text-primary text-3xl">verified_user</span>
+            <img 
+              src="icon128.png" 
+              alt="PostStamper Logo" 
+              className="w-8 h-8 object-contain shadow-sm group-hover:drop-shadow-[0_0_8px_rgba(124,58,237,0.5)] transition-all"
+            />
             <span className="font-bold text-xl tracking-tight dark:text-white">PostStamper</span>
           </button>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-6">
-              <a className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#features">Features</a>
-              <a className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#how-it-works">How it Works</a>
-              <a className="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-purple-500/30" href="#">Get Extension</a>
-            </div>
-          </div>
-
-          <div className="md:hidden">
-            <button className="p-2 rounded-md text-slate-400 hover:text-primary transition-colors">
-              <span className="material-icons-round">menu</span>
-            </button>
+          <div className="flex items-center">
+            <a className="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-purple-500/30" href="#">
+              Get Extension
+            </a>
           </div>
         </div>
       </div>

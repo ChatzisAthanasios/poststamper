@@ -6,7 +6,11 @@ const PhoneFrame: React.FC<{ children: React.ReactNode; title: string }> = ({ ch
     <div className="iphone-frame w-[300px] h-[580px] flex flex-col">
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 pt-10 text-center text-white shrink-0">
         <div className="flex justify-center mb-3">
-          <span className="material-icons-round text-4xl">check_circle</span>
+          <div className="w-16 h-16 rounded-full bg-white/10 p-1 backdrop-blur-sm shadow-inner flex items-center justify-center">
+            <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-2xl overflow-hidden">
+               <img src="icon128.png" alt="Logo" className="w-12 h-12 object-contain" />
+            </div>
+          </div>
         </div>
         <h2 className="font-bold text-xl tracking-tight">PostStamper</h2>
         <p className="text-[10px] opacity-80 mt-1 uppercase tracking-widest">Blockchain-verified timestamps</p>
