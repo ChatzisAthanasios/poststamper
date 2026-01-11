@@ -16,7 +16,7 @@ const Inspiration: React.FC = () => {
           
           <div className="space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
             <p>
-              My journey into the world of digital proof began with a deep dive into the cypherpunk ethos. I became profoundly inspired by the work of <span className="text-slate-900 dark:text-white font-bold">Rob Todd</span> and the revolutionary concept of <span className="text-slate-900 dark:text-white font-bold">OpenTimestamps</span>.
+              My journey into the world of digital proof began with a deep dive into the cypherpunk ethos. I became profoundly inspired by the work of <span className="text-slate-900 dark:text-white font-bold">Peter Todd</span> and the revolutionary concept of <span className="text-slate-900 dark:text-white font-bold">OpenTimestamps</span>.
             </p>
             <p>
               Discovering that <span className="text-slate-900 dark:text-white font-bold">Bitcoin</span> could serve as more than just a financial asset—that it could function as a globally distributed, immutable ledger for truth—changed everything for me. It meant we no longer had to trust centralized authorities to prove *when* a piece of digital information existed.

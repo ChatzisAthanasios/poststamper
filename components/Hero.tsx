@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -20,7 +19,12 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-16">
-            <a className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white bg-primary rounded-2xl hover:bg-opacity-90 transition-all shadow-2xl shadow-purple-500/40 cta-glow transform hover:-translate-y-1" href="#">
+            <a 
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white bg-primary rounded-2xl hover:bg-opacity-90 transition-all shadow-2xl shadow-purple-500/40 cta-glow transform hover:-translate-y-1" 
+              href="https://chromewebstore.google.com/detail/poststamper/eibpfjfbhpfgfineikinhlojgfnddnli"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="material-icons-round">add_to_queue</span>
               Add to Chrome
             </a>

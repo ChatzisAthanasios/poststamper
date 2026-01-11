@@ -18,7 +18,12 @@ const Navbar: React.FC = () => {
           </a>
           
           <div className="flex items-center">
-            <a className="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-purple-500/30" href="#">
+            <a 
+              className="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-purple-500/30" 
+              href="https://chromewebstore.google.com/detail/poststamper/eibpfjfbhpfgfineikinhlojgfnddnli"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Get Extension
             </a>
           </div>
